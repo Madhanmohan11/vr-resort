@@ -57,7 +57,7 @@ const Hero = () => {
           </Button>
         </div>
         
-        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm">
+        <div className="flex flex-col sm:flex-row gap-6 justify-center items-center text-sm mb-12">
           <div className="flex items-center gap-2">
             <MapPin className="w-4 h-4 text-orange-400" />
             <span>ECR Chennai, Premium Destination</span>
