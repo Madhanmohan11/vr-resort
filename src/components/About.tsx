@@ -1,16 +1,16 @@
 
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import { Wifi, Car, Coffee, Waves, TreePine, Utensils } from 'lucide-react';
+import { Wifi, Car, Music, Waves, TreePine, Gamepad2 } from 'lucide-react';
 
 const About = () => {
   const amenities = [
     { icon: Waves, name: 'Swimming Pool', desc: 'Crystal clear waters' },
     { icon: Wifi, name: 'Free WiFi', desc: 'High-speed internet' },
     { icon: Car, name: 'Parking', desc: 'Complimentary valet' },
-    { icon: Coffee, name: 'Café', desc: 'Premium beverages' },
+    { icon: Music, name: 'Music Sys', desc: 'JBL Sound System' },
     { icon: TreePine, name: 'Garden', desc: 'Landscaped grounds' },
-    { icon: Utensils, name: 'Restaurant', desc: 'Fine dining experience' }
+    { icon: Gamepad2, name: 'Indoor-game', desc: 'Shuttle, Carrom, Chess' }
   ];
 
   return (

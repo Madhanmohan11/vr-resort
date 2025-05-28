@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import { ChevronLeft, ChevronRight, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import Res from '../assets/images/Resort Pool Area.jpeg';
+import Res from '../assets/images/Resort pool.jpeg';
+import Dining from '../assets/images/Dining.jpeg';
+import Living from '../assets/images/Living.jpeg';
+import luxury from '../assets/images/Luxury suit.jpeg';
+import Garnden from '../assets/images/Garden.jpeg';
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
@@ -13,24 +17,24 @@ const Gallery = () => {
       category: 'Pool & Recreation',
     },
     {
-      src: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      src: luxury,
       alt: 'Luxury Suite',
       category: 'Accommodations',
     },
     {
-      src: 'https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      src: Dining,
       alt: 'Resort Restaurant',
       category: 'Dining',
     },
     {
-      src: 'https://images.unsplash.com/photo-1587271407850-8d438ca9fdf2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      src: Garnden,
       alt: 'Garden View',
       category: 'Gardens',
     },
     {
-      src: 'https://images.unsplash.com/photo-1561501900-3701fa6a0864?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
-      alt: 'Spa & Wellness',
-      category: 'Wellness',
+      src:  Living,
+      alt: 'Tv Room', 
+      category: 'Living',
     },
     {
       src: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
