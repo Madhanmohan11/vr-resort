@@ -1,6 +1,7 @@
 import React from 'react';
 import { MapPin, Phone, Mail, Facebook, Instagram, Twitter } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom'; // ✅ Use Link for internal routing
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -67,17 +68,20 @@ const Footer = () => {
                 <a href="#booking" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
                   Booking
                 </a>
-                {/* add */}
-                <a href="../pages/AdminLogin.tsx" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
+                {/* ✅ Admin Portal using React Router */}
+                <Link
+                  to="/admin"
+                  className="block text-gray-300 hover:text-orange-400 transition-colors duration-300"
+                >
                   Admin Portal
-                </a>
+                </Link>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-700 mt-12 pt-8 text-center">
             <p className="text-gray-400">
-             © {currentYear} MADRASS VILLA. All rights reserved. | Designed with ❤️ by <span className="text-orange-400 font-semibold">M-websolution.</span>
+              © {currentYear} MADRASS VILLA. All rights reserved. | Designed with ❤️ by <span className="text-orange-400 font-semibold">M-websolution.</span>
             </p>
           </div>
         </div>
