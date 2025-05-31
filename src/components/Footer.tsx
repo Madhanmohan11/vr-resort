@@ -67,7 +67,8 @@ const Footer = () => {
                 <a href="#booking" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
                   Booking
                 </a>
-                <a href="/admin" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
+                {/* add */}
+                <a href="../pages/AdminLogin.tsx" className="block text-gray-300 hover:text-orange-400 transition-colors duration-300">
                   Admin Portal
                 </a>
               </div>
